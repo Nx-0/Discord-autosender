@@ -1,0 +1,23 @@
+{
+  "name": "discord-autosend",
+  "version": "1.0.0",
+  "description": "A package that allows you to send messages through a discord account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nx-0/Discord-autosend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nx-0/Discord-autosend/issues"
+  },
+  "homepage": "https://github.com/Nx-0/Discord-autosend#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "discord.js": "^13.6.0"
+  }
+}
