@@ -4,11 +4,11 @@
 <p align="center">A package that allows you to automatically send messages through a discord account!</p>
 
 ## With this package, you can:
-    - Create automated messages
-    - Create spam messages from your account
-    - Send messages in an interval loop
-    - Exploit discord bots (like claiming daily prizes for example)
-    - And more!
+ - Create automated messages
+ - Create spam messages from your account
+ - Send messages in an interval loop
+ - Exploit discord bots (like claiming daily prizes for example)
+ - And more!
 
 
 ## Install from NPM
