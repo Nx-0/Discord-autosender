@@ -1,4 +1,4 @@
-<h1 align="center">Discord-autosender</h1>
+<h1 align="center">discord-autosender</h1>
 <br>
 
 <p align="center">A package that allows you to automatically send messages through a discord account!</p>
@@ -13,13 +13,13 @@
 
 ## Install from NPM
 ```
-npm i Discord-autosender --save
+npm i discord-autosender
 ```
 
 
 ## Usage
 ```js
-const autosend = require("Discord-autosender")
+const autosend = require("discord-autosender")
 
 var message = "This message has been sent from an automated script!"
 var channelID = 945821788531732500
@@ -29,14 +29,16 @@ Post(message, channelID, tokenID)
 ```
 
 
-## Options
+## Functions
 ```js
 // This will post a message using the discord token and channelID provided
 Post(message, channelID, tokenID)
-
-// This will do the same as above but with an interval parameter in milliseconds
+```
+```js
+// This will do the same as above but it'll loop with the given interval parameter in milliseconds
 PostInterval(message, channelID, tokenID, milliseconds)
-
+```
+```js
 // This will spam the message in a set amount of times, might break due to how dodgy this function is
 SpamSend(message, channelID, tokenID, amount)
 ```
