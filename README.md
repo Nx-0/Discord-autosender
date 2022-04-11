@@ -22,10 +22,10 @@ npm i discord-autosender
 const autosend = require("discord-autosender")
 
 var message = "This message has been sent from an automated script!"
-var channelID = 945821788531732500
+var channelID = "945821788531732500"
 var tokenID = "mfa.HrKVKI8EIvRCSTrrfvNL6x9yp9jRDyvheux8PjwUCBigMVDdn8vRFw3GgfGxbB2pAvYOnGa7cJw2BPVZk-KJ"
 
-Post(message, channelID, tokenID)
+autosend.Post(message, channelID, tokenID)
 ```
 
 

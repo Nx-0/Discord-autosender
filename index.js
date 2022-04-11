@@ -14,8 +14,9 @@ async function CheckToken(token) {
     }
 }
 
-function ErrorOutput() {
-    console.log("Either the channel ID is invalid/unable, or there has been an error with the discord API.")
+function ErrorOutput(error) {
+    console.error("Either the channel ID is invalid/unable, or there has been an error with the discord API.")
+    console.error(error)
 }
 
 function Post(message, channel, token) {
@@ -28,15 +29,19 @@ function Post(message, channel, token) {
     }
 }
 
-function PostInterval(message, channel, token, interval) {
+function PostInterval(message, channel, token, min, max) {
     try {
         const URL = `https://discord.com/api/v9/channels/${channel}/messages`
         const payload = { content: `${message}` }
-        while (true) {
-            setTimeout(() => { axios.post(URL, payload, { headers: { 'authorization': token } }); }, interval);
-        }
-    } catch {
-        ErrorOutput()
+
+        var interval = Math.floor(Math.random()*(max - min) + min);
+        console.log(interval)
+        setInterval(async () => {
+            interval = Math.floor(Math.random()*(max - min) + min);
+            await axios.post(URL, payload, { headers: { 'authorization': token } });
+        }, interval);
+    } catch (error) {
+        ErrorOutput(error)
     }
 }
 
