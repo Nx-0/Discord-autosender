@@ -31,14 +31,12 @@ autosend.Post(message, channelID, tokenID)
 
 ## Functions
 ```js
-// This will post a message using the discord token and channelID provided
-Post(message, channelID, tokenID)
-```
-```js
-// This will do the same as above but it'll loop with the given interval parameter in milliseconds
-PostInterval(message, channelID, tokenID, milliseconds)
-```
-```js
+// This will post a message using your discord token with the channel ID provided
+autosend.Post(message, channelID, tokenID)
+
+// This will do the same as above but it'll loop with the given mimimum and maximum interval delay parameter in milliseconds, this is added to avoid bot detection from discord
+autosend.PostInterval(message, channelID, tokenID, min, max)
+
 // This will spam the message in a set amount of times, might break due to how dodgy this function is
-SpamSend(message, channelID, tokenID, amount)
+autosend.SpamSend(message, channelID, tokenID, amount)
 ```
