@@ -1,6 +1,6 @@
 {
   "name": "discord-autosender",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package that allows you to send messages through a discord account",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,17 @@
     "url": "https://github.com/Nx-0/Discord-autosender/issues"
   },
   "homepage": "https://github.com/Nx-0/Discord-autosend#readme",
+  "keywords": [
+    "discord",
+    "autosender",
+    "autosend",
+    "autosend-discord",
+    "exploit",
+    "automation",
+    "account",
+    "bot",
+    "send"
+	],
   "dependencies": {
     "axios": "^0.26.1",
     "discord.js": "^13.6.0"
