@@ -24,8 +24,8 @@ function Post(message, channel, token) {
         const URL = `https://discord.com/api/v9/channels/${channel}/messages`
         const payload = { content: `${message}` }
         axios.post(URL, payload, { headers: { 'authorization': token } })
-    } catch {
-        ErrorOutput()
+    } catch (error) {
+        ErrorOutput(error)
     }
 }
 
@@ -61,8 +61,8 @@ function SpamPost(message, channel, token, amount) {
         } else {
             throw new Error("Please add a valid number or add \"infinity\" as your amount argument!")
         }
-    } catch {
-        ErrorOutput()
+    } catch (error) {
+        ErrorOutput(error)
     }
 }
 
