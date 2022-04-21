@@ -29,7 +29,7 @@ function Post(message, channel, token) {
     }
 }
 
-function PostInterval(message, channel, token, min, max) {
+function PostLoop(message, channel, token, min, max) {
     try {
         const URL = `https://discord.com/api/v9/channels/${channel}/messages`
         const payload = { content: `${message}` }
@@ -67,5 +67,5 @@ function SpamPost(message, channel, token, amount) {
 }
 
 module.exports = {
-    Post, PostInterval, SpamPost
+    Post, PostLoop, SpamPost
 }

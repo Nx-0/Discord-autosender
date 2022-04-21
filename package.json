@@ -1,6 +1,6 @@
 {
   "name": "discord-autosender",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A package that allows you to send messages through a discord account",
   "main": "index.js",
   "scripts": {
