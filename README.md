@@ -29,6 +29,11 @@ autosend.Post(message, channelID, tokenID)
 ```
 
 
+## How to get your discord token
+- Please do not get confused between a `bot` token and an `account` token, just to be 100% clear.
+- I recommend you watch [this video](https://www.youtube.com/watch?v=YEgFvgg7ZPI) to obtain your token. Please be careful to not share it with anybody else.
+
+
 ## Functions
 ```js
 // This will post a message using your discord token with the channel ID provided
@@ -40,3 +45,7 @@ autosend.PostLoop(message, channelID, tokenID, min, max)
 // This will spam the message in a set amount of times, might break due to how dodgy this function is
 autosend.SpamSend(message, channelID, tokenID, amount)
 ```
+
+
+## Credits
+- kernel: https://github.com/Existential-Kernel (please contact me on discord at nonce#0001 if you encounter any issues or if you have any questions. I'll be happy to help!)
