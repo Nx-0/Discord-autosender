@@ -25,8 +25,11 @@
     "automation",
     "account",
     "bot",
-    "send"
-	],
+    "send",
+    "post",
+    "autopost",
+    "auto"
+  ],
   "dependencies": {
     "axios": "^0.26.1",
     "discord.js": "^13.6.0"
